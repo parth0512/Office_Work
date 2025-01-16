@@ -10,9 +10,9 @@
     <div class="nav">
       <ul class="navbar">
         <li class="burn">burn<span class="studio">studio</span></li>
-        <li class="port">portfolio <span class="slesh">/</span></li>
-        <li class="about">about me <span class="slesh">/</span></li>
-        <li class="contact"><b>contact me</b></li>
+        <li class="port">Portfolio <span class="slesh">/</span></li>
+        <li class="about">About me <span class="slesh">/</span></li>
+        <li class="contact"><b>Contact me</b></li>
       </ul>
     </div>
     <hr style="color: rgb(143, 143, 143); margin-left: 30px" />
