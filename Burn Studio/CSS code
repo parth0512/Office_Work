@@ -1,0 +1,320 @@
+.burn{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50%;
+    margin-left: 90px;
+}
+.studio{
+    color: rgb(232, 37, 37);
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.navbar{
+    display: inline;
+    cursor: pointer;
+}
+.navbar li{
+    display: inline-block;
+    list-style: none;
+}
+.port{
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.861);
+    margin-right: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.slesh{
+    margin-left: 10px;
+    color: rgba(128, 128, 128, 0.861);
+    font-weight: bold;
+}
+.about{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.contact{
+    font-size: 20px;
+}
+.heading{
+    font-family: "Arial";
+    margin-top: 100px;
+    text-align: center;
+}
+.text{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 17px;
+    word-spacing:1mm;
+    
+}
+.button{
+    cursor: pointer;
+    height: 25px;
+    width: 90px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 45%;
+    margin-bottom: 5%;
+    background-color: rgb(30, 29, 29);
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+}
+
+  .projects-heading {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 130px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 90px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    background-color: #d3d3d3;
+    height: 200px;
+    width: 100%;
+}
+
+.project-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.project-details h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.project-details p {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+.background{
+    
+    display: grid;
+    grid-template-rows: 80px 300px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 0px 90px;
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.276);
+    
+}
+.whats-new{
+    margin-top: 22px;
+}
+.container-new {
+    display: flex;
+}
+.para{
+    margin-left: 30px;
+}
+.logo{
+    margin-top: 25px;
+    width: 120px;
+}
+
+.inherit{
+ color:rgba(62, 62, 62, 0.861) ;
+}
+
+.project-card-new {
+    background-color: rgb(206, 200, 200);
+    overflow: hidden;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-new {
+    background-color: #ccc9c9;
+    height: 80px;
+    width: 100%;
+}
+.about-me{
+    flex:1;
+    padding: 20px;
+    border-radius: 8px;
+}
+.about h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-me p{
+    justify-content: left;
+    font-size: 16px;
+} 
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-content {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0 0 10px;
+}
+.spaan{
+   
+    margin-right: 30%;
+}
+.footer nav {
+    display: inline-block;
+    padding: auto;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.footer-link {
+    text-decoration: none;
+    color: #18abd4;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #005f73;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .burn {
+        float: left;
+        font-size: 19px;
+        margin-right: auto;
+        margin-left: 10px;
+    }
+
+    .studio {
+        font-size: 16px;
+        margin-right: 14px;
+    }
+    .port{
+        text-align: end;
+    }
+    .navbar li {
+        margin-right: 2px;
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .button {
+        width: 80px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: calc(50% - 40px);
+    }
+    
+    .projects-heading {
+        margin-left: 90px;
+    }
+    .projects-container {
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .project-card {
+        width: 90%; 
+    }
+    .background {
+        overflow: scroll;
+        gap: 0px;
+        margin: 0px;
+    }
+
+    .about-me {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .whats-new {
+        margin-top: -10px;
+        padding: 20px;
+    }
+
+    .container-new {
+        gap: 10px;
+    }
+
+    .project-card-new {
+        height: 40px;
+        width: 50px;
+        padding: 8px;
+    }
+
+    .project-image-new {
+        height: 70px;
+    }
+
+    .para {
+        margin-left: 0;
+        justify-content: left;
+        font-size: 9px;
+    }
+    .footer {
+        
+        margin-right: 10px;
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .footer nav {
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+    }
+    .spaan{
+        margin-right: 3%;
+        margin-top: 3%;
+    }
+
+    .footer-link {
+        margin-top: 5%;
+        font-size: 12px;
+    }
+}
