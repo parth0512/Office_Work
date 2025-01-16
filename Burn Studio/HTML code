@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>burnstudio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="nav">
+      <ul class="navbar">
+        <li class="burn">burn<span class="studio">studio</span></li>
+        <li class="port">portfolio <span class="slesh">/</span></li>
+        <li class="about">about me <span class="slesh">/</span></li>
+        <li class="contact"><b>contact me</b></li>
+      </ul>
+    </div>
+    <hr style="color: rgb(143, 143, 143); margin-left: 30px" />
+
+    <h1 class="heading">I'm Graphic /Web Designer Based in Pholippines</h1>
+    <p class="text">
+      This is Photoshop version Lorem Ipscm. nibh accbr aläuet.Aenean
+      sollicitudin, lorem quis<br />
+      bibendumn auctor, nisi eit consequat ipsum, nec sagittis sem nibh id elit.
+    </p>
+    <button class="button">Hire Me</button>
+    <hr style="color: rgb(143, 143, 143); margin-left: 30px" />
+    <h2 class="projects-heading">My Latest Project</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-image"></div>
+        <div class="project-details">
+          <h3>1WD.TV Project</h3>
+          <p>Web design, Freelance</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image"></div>
+        <div class="project-details">
+          <h3>1WD.TV Project</h3>
+          <p>Web design, Freelance</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image"></div>
+        <div class="project-details">
+          <h3>1WD.TV Project</h3>
+          <p>Web design, Freelance</p>
+        </div>
+      </div>
+    </div>
+    <div class="background" style="margin-left: 30px">
+      <div class="about-me" style="margin-left: 100px">
+        <h3>About me</h3>
+        <p>
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+          velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+          nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+        </p>
+        <p style="margin-top: 30px">
+          Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+          vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris
+          in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a
+          augue.
+        </p>
+        <img class="logo" src="logo.png" />
+      </div>
+      <div class="whats-new">
+        <h3>What's new</h3>
+        <div class="container-new">
+          <div class="project-card-new">
+            <div class="project-image-new"></div>
+          </div>
+          <p class="para">
+            <b>This is photoshop version of<br />Lorem ipsum.</b><br />
+            <span
+              style="
+                color: red;
+                font-size: small;
+                display: inline-block;
+                margin-top: 10px;
+              "
+              >Web Design</span
+            >
+            <span style="color: rgb(90, 90, 90)">- January 28,2013 -</span>
+            <span style="color: red; font-size: small">Admin</span>
+          </p>
+        </div>
+        <hr style="margin-top: 40px" />
+        <div class="container-new" style="margin-top: 30px">
+          <div class="project-card-new">
+            <div class="project-image-new"></div>
+          </div>
+          <p class="para">
+            <b>This is photoshop version of<br />Lorem ipsum.</b><br />
+            <span
+              style="
+                color: red;
+                font-size: small;
+                display: inline-block;
+                margin-top: 10px;
+              "
+              >Web Design</span
+            >
+            <span style="color: rgb(90, 90, 90)">- January 28,2013 -</span>
+            <span style="color: red; font-size: small">Admin</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <b
+        >Copyright 2013
+        <span class="spaan" style="color: red">Burnstudio</span>
+        <nav>
+          <a href="#" class="footer-link">Portfolio</a>
+          <span>/</span>
+          <a href="#" class="footer-link" style="color: black">About Me</a>
+          <span>/</span>
+          <a href="#" class="footer-link" style="color: black">Contacts</a>
+        </nav>
+      </b>
+    </footer>
+  </body>
+</html>
