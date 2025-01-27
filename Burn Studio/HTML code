@@ -8,16 +8,18 @@
   </head>
   <body>
     <div class="nav">
+      <div class="burn">burn<span class="studio">studio</span></div>
+      <button class="toggle-btn">☰</button>
       <ul class="navbar">
-        <li class="burn">burn<span class="studio">studio</span></li>
-        <li class="port">Portfolio <span class="slesh">/</span></li>
-        <li class="about">About me <span class="slesh">/</span></li>
-        <li class="contact"><b>Contact me</b></li>
+        <li class="port"><b>Portfolio</b><span class="slesh">/</span></li>
+        <li class="about">About me<span class="slesh">/</span></li>
+        <li class="contact"><b> Contact me</b></li>
       </ul>
     </div>
+
     <hr style="color: rgb(143, 143, 143); margin-left: 30px" />
 
-    <h1 class="heading">I'm Graphic /Web Designer Based in Pholippines</h1>
+    <h1 class="heading">I'm Graphic /Web Designer Based in Philippines</h1>
     <p class="text">
       This is Photoshop version Lorem Ipscm. nibh accbr aläuet.Aenean
       sollicitudin, lorem quis<br />
@@ -49,8 +51,8 @@
         </div>
       </div>
     </div>
-    <div class="background" style="margin-left: 30px">
-      <div class="about-me" style="margin-left: 100px">
+    <div class="background">
+      <div class="about-me">
         <h3>About me</h3>
         <p>
           This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
@@ -122,5 +124,13 @@
         </nav>
       </b>
     </footer>
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const navbar = document.querySelector(".navbar");
+
+      toggleBtn.addEventListener("click", () => {
+        navbar.classList.toggle("visible");
+      });
+    </script>
   </body>
 </html>
