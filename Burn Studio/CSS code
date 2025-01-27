@@ -1,4 +1,4 @@
-.burn{
+ .burn{
     color: black;
     font-size: 20px;
     font-weight: bold;
@@ -161,6 +161,7 @@
 }
 .about-me{
     flex:1;
+    margin-left: 100px;
     padding: 20px;
     border-radius: 8px;
 }
@@ -173,9 +174,9 @@
     font-size: 16px;
 } 
 .footer {
-    background-color: #f9f9f9;
+   
     padding: 20px;
-    text-align: center;
+    text-align: center !important;
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: #333;
@@ -194,6 +195,7 @@
     margin-right: 30%;
 }
 .footer nav {
+    text-align: center !important;
     display: inline-block;
     padding: auto;
     justify-content: center;
@@ -210,111 +212,499 @@
 .footer-link:hover {
     text-decoration: underline;
     color: #005f73;
-}
-
-
-@media only screen and (max-width: 480px) {
+} 
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .burn {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar.hidden {
+    display: none;
+  }
+  
+  .slesh {
+    display: inline;
+  }
+@media only screen and (max-width: 1024px) {
+    
     .burn {
-        float: left;
-        font-size: 19px;
+        font-size: 18px;
+        margin-left: 50px;
         margin-right: auto;
-        margin-left: 10px;
     }
 
     .studio {
-        font-size: 16px;
-        margin-right: 14px;
+        font-size: 18px;
     }
     .port{
-        text-align: end;
+        margin-left: 45%;
     }
+
     .navbar li {
-        margin-right: 2px;
-        font-size: 14px;
+        font-size: 16px;
+        margin-right: 10px;
     }
 
     .heading {
-        font-size: 20px;
-        margin-top: 30px;
+        font-size: 22px;
+        margin-top: 70px;
     }
 
     .text {
-        font-size: 14px;
-        margin: 10px;
+        font-size: 15px;
+        margin: 15px 20px;
     }
 
     .button {
-        width: 80px;
-        height: 30px;
-        margin-top: 10px;
-        margin-left: calc(50% - 40px);
+        width: 100px;
+        height: 35px;
+        margin-left: calc(50% - 50px);
     }
-    
-    .projects-heading {
-        margin-left: 90px;
-    }
+
     .projects-container {
-        margin: 10px;
-        gap: 10px;
+        gap: 15px;
+        margin: 15px 50px;
     }
 
     .project-card {
-        width: 90%; 
+        width: 48%;
+        margin-bottom: 20px;
     }
+
     .background {
-        overflow: scroll;
-        gap: 0px;
-        margin: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        margin: 10px;
     }
 
     .about-me {
-        padding: 10px;
-        font-size: 14px;
+        padding: 15px;
+        font-size: 16px;
     }
 
-    .whats-new {
-        margin-top: -10px;
-        padding: 20px;
-    }
-
-    .container-new {
-        gap: 10px;
-    }
-
-    .project-card-new {
-        height: 40px;
-        width: 50px;
-        padding: 8px;
-    }
-
-    .project-image-new {
-        height: 70px;
-    }
-
-    .para {
-        margin-left: 0;
-        justify-content: left;
-        font-size: 9px;
-    }
     .footer {
-        
-        margin-right: 10px;
-        font-size: 12px;
+        text-align: center;
+        font-size: 13px;
         padding: 15px;
     }
 
     .footer nav {
-        align-items: center;
         gap: 5px;
-        font-size: 12px;
     }
-    .spaan{
-        margin-right: 3%;
-        margin-top: 3%;
+}
+@media only screen and (max-width: 1200px) {
+
+    .studio{
+        font-size: 15px;
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .port {
+        margin-left: 20px !important;
+    }
+    .background{
+        margin-left: 10px !important;
+        padding-left: 15px !important;
+    }
+    .button {
+        width: 100px;
+        height: 35px;
+        margin-left: calc(50% - 50px);
+    }
+
+    .projects-container {
+        gap: 15px;
+        margin: 15px 50px;
+    }
+
+    .project-card {
+        width: 100%s;
+        margin-bottom: 20px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me {
+        order: 1;
+        padding: 10px; 
+        padding-left: 10px;
+        font-size: 14px; 
+        text-align: left !important; 
+        margin: 0; 
+    }
+
+    .about-me h3 {
+        margin-left:0 0 10px 0; 
+        text-align: left !important;
+    }
+
+    .about-me p {
+        margin: 5px 0; 
+        text-align: left !important; 
+    }
+
+  
+    .about-me .social-icons {
+        margin-top: 10px; 
+        text-align: left !important; 
+    }
+
+   
+    .whats-new {
+        order: 2;
+        padding: 10px; 
+        padding-left: 10px; 
+        margin: 0;
+        text-align: left; 
+    }
+
+    .whats-new h3 {
+        margin-bottom: 10px; 
+    }
+
+    .whats-new .project-card-new {
+        margin-bottom: 15px; 
+    }
+    .footer {
+        margin-left: 80px;
+        font-size: 12px;
+        padding: 10px;
+        text-align: center !important;
+    }
+
+    .footer nav {
+        margin-top: 10px;
+        margin-right: 130px;
+        display:inline-block;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
     }
 
     .footer-link {
-        margin-top: 5%;
         font-size: 12px;
+        text-align: center;
     }
+
+    
+
+    .navbar li {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-size: 15px;
+
+    }
+    .toggle-btn {
+        display: block;
+      }
+    
+      .navbar {
+        flex-direction: column;
+        background: #f4f4f4;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: none;
+        
+      }
+    
+      .navbar.visible {
+        display: block;
+        width: 150px;
+        height: 68px;
+       
+      }
+    
+      .slesh {
+        display: none; 
+      }
+    }
+
+@media only screen and (max-width: 480px) {
+    .toggle-btn {
+        display: block;
+      }
+    
+      .navbar {
+        font-size: 15px;
+        flex-direction: column;
+        background: #f4f4f4;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 50px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: none;
+        
+      }
+      .navbar li {
+        display: block;
+        text-align: center;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+       
+    }
+    
+      .navbar.visible {
+        display: block;
+        width: 150px;
+        height: 68px;
+      }
+    
+      .slesh {
+        display: none; 
+      }
+    
+    .button {
+        width: 100px;
+        height: 35px;
+        margin-left: calc(50% - 50px);
+    }
+
+    .projects-container {
+        gap: 15px;
+        margin: 15px 50px;
+    }
+    .projects-heading{
+            margin-left: 25%;
+    }
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .studio{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .port {
+        margin-left: 20px !important;
+    }
+    .background{
+        margin-left: 10px !important;
+        padding-left: 15px !important;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me {
+        order: 1;
+        padding: 10px; 
+        padding-left: 10px; 
+        font-size: 14px; 
+        text-align: left !important; 
+        margin: 0;
+    }
+
+    .about-me h3 {
+        margin-left:0 0 10px 0; 
+        text-align: left !important;
+    }
+
+    .about-me p {
+        margin: 5px 0; 
+        text-align: left !important; 
+    }
+
+   
+    .about-me .social-icons {
+        margin-top: 10px;
+        text-align: left !important; 
+    }
+
+    .whats-new {
+        order: 2;
+        padding: 10px; 
+        padding-left: 10px; 
+        margin: 0; 
+        text-align: left; 
+    }
+
+    .whats-new h3 {
+        margin-bottom: 10px;
+    }
+
+    .whats-new .project-card-new {
+        margin-bottom: 15px; 
+    }
+    .footer {
+        margin-left: 80px;
+        font-size: 12px;
+        padding: 10px;
+        text-align: center !important;
+    }
+
+    .footer nav {
+        margin-top: 10px;
+        margin-right: 100px;
+        display:inline-block;
+        flex-direction: column;
+        align-items: center !important;
+        gap: 8px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+
 }
+@media only screen and (max-width: 556px) {
+    .toggle-btn {
+        display: block;
+      }
+      .navbar {
+        font-size: 15px;
+        flex-direction: column;
+        background: #f4f4f4;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: none !important;
+      }
+      .navbar li{
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 0px;
+       
+    }
+    
+      .navbar.visible {
+        display: block !important;
+        width: 150px;
+        height:68px;
+      }
+
+    .button {
+        width: 100px;
+        height:35px;
+        margin-left:calc(50% - 50px);
+    }
+
+    .projects-container {
+        gap: 15px;
+        margin: 15px 50px;
+    }
+    .projects-heading{
+            margin-left: 25%;
+    }
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .studio{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .port {
+        margin-left: 20px !important;
+    }
+    .background{
+        margin-left: 10px !important;
+        padding-left: 15px !important;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me {
+        order: 1;
+        padding: 10px; 
+        padding-left: 10px;
+        font-size: 14px; 
+        text-align: left !important; 
+        margin: 0; 
+    }
+
+    .about-me h3 {
+        margin-left:0 0 10px 0; 
+        text-align: left !important;
+    }
+
+    .about-me p {
+        margin: 5px 0; 
+        text-align: left !important; 
+    }
+
+    
+    .about-me .social-icons {
+        margin-top: 10px; 
+        text-align: left !important; 
+    }
+    .whats-new {
+        order: 2;
+        padding: 10px; 
+        padding-left: 10px;
+        margin: 0;
+        text-align: left; 
+    }
+
+    .whats-new h3 {
+        margin-bottom: 10px; 
+    }
+
+    .whats-new .project-card-new {
+        margin-bottom: 15px; 
+    }
+    .footer {
+        margin-left: 90px;
+        font-size: 12px;
+        padding: 10px;
+        text-align: center !important;
+    }
+
+    .footer nav {
+        margin-top: 10px;
+        margin-right: 120px;
+        display:inline-block;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
+ 
+
+
