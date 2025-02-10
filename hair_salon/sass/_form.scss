@@ -1,0 +1,195 @@
+
+.appointment-box {
+    margin-top: -80px;
+    height: 380px;
+    width: 100%; 
+    padding: 50px 20px 20px; 
+    border: 2px solid black; 
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    background: white; 
+
+    .form{
+        input{
+            font-weight: bold;
+            background-color: rgba(6, 6, 6, 0.200);
+            margin-left: 50px;
+            margin-bottom: 30px;
+            width: 80%;
+            border-radius: 0;
+            border-style: none;
+
+        }
+        button{
+            margin-left: 50px;
+            width: 80%;
+        }
+    }
+  }
+  
+  .moustache-wrapper {
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    padding: 0 20px; 
+    display: flex;
+    align-items: center;
+
+  
+    img {
+      width: 90px; 
+      margin: 0 10px;
+    }
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  @media (max-width: 992px) {
+    .appointment-box {
+      margin-top: -60px;
+      height: 350px;
+      padding: 40px 15px 15px;
+      
+      .form {
+        input {
+          margin-left: 50px;
+          width: 85%;
+        }
+        button {
+          margin-top: 30px;
+          margin-left: 50px;
+          width: 85%;
+        }
+      }
+    }
+  
+    .moustache-wrapper {
+      top: -40px;
+  
+      img {
+        width: 80px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .appointment-box {
+      margin-top: -50px;
+      height: 320px;
+      padding: 30px 10px 10px;
+      
+      .form {
+        input {
+          margin-left: 20px;
+          width: 90%;
+        }
+        button {
+          margin-top: 10px;
+          margin-left: 20px;
+          width: 90%;
+        }
+      }
+    }
+  
+    .moustache-wrapper {
+      top: -35px;
+  
+      img {
+        width: 70px;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-section{
+      h3{
+        font-size: 20px;
+      }
+    }
+    .appointment-box {
+      margin-top: -70px;
+      height: 300px;
+      padding: 20px 5px 5px;
+      
+      .form {
+        input {
+          margin-left: 10px;
+          width: 95%;
+        }
+        button {
+        
+          margin-left: 5px;
+          width: 98%;
+          margin-bottom: 10px;
+          height: 10%;
+        }
+      }
+    }
+  
+    .moustache-wrapper {
+      top: -30px;
+  
+      img {
+        width: 60px;
+      }
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .text-section{
+      h3{
+        font-size: 20px;
+      }
+    }
+    .appointment-box {
+      margin-top: -60px;
+      height: 280px;
+      padding: 15px 5px 5px;
+      
+      
+      .form {
+        input {
+          margin-left: 5px;
+          width: 98%;
+        }
+        button {
+          margin: -10px;
+          margin-left: 15px;
+          width: 90%;
+        }
+      }
+    }
+  
+    .moustache-wrapper {
+      top: -25px;
+  
+      img {
+        width: 50px;
+      }
+    }
+  }
+  

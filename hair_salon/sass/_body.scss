@@ -1,0 +1,210 @@
+.background {
+    position: relative;
+    padding: 0;
+    transition: margin-top 0.3s ease-in-out;
+  
+    img {
+      background: url(/img/background.jpg) center top;
+      opacity: 0.5;
+      width: 100vw;
+      height: 800px;
+      background-color: #000000;
+      transition: transform 0.3s ease-in-out;
+      background-size: cover;
+    }
+  
+    .offer {
+      h1{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        font-size: 50px;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        z-index: 1;
+        transition: transform 0.9s ease-in-out;
+        margin-bottom: 20px;
+      }
+      p{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 1;
+        transition: transform 0.9s ease-in-out;
+        font-size: 22px;
+        letter-spacing: 5px;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: "Roboto";
+        text-align: center;
+      }
+      hr {
+        opacity: 1;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,70%);
+        width: 300px;
+        height: 5px;
+        background-color: white;
+        border: none;
+        display: block;
+      }
+      .cont{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 5%;
+      }
+      .appointmentBtn{
+        align-items: center !important;
+        position: absolute; 
+        transform: translateX(-10%);
+        top: 55%;
+        width: 400px;
+        height: 50px;
+        background-color: #ffffff;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        border: none;
+        color: #000000;
+      }
+    }
+  }
+  
+  .navbar-collapse.show ~ .background {
+    .offer {
+      transform: translate(-50%, 50%);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .background {
+      .offer {
+        h1 {
+          font-size: 40px; /* Adjust size for mobile */
+          top: 15%;
+        }
+  
+        p {
+          font-size: 20px; /* Reduce text size */
+          top: 22%;
+          letter-spacing: 2px;
+        }
+  
+        hr {
+          width: 150px; /* Reduce the width of the line */
+          top: 40%;
+          height: 3px;
+        }
+        .appointmentBtn{
+          position: absolute; 
+          top: 50%;
+          width: 300px;
+          height: 50px;
+          background-color: #ffffff;
+        }
+        .cont{
+          display:flex;
+          justify-content: center !important;
+          align-items: center;
+          margin-right: -3%;
+      }
+      }
+    }
+  }
+  @media (max-width: 625px) {
+
+    .background {
+      .offer {
+        h1 {
+          font-size: 30px; /* Adjust size for mobile */
+          top: 15%;
+        }
+  
+        p {
+          font-size: 15px; /* Reduce text size */
+          top: 22%;
+          letter-spacing: 2px;
+        }
+  
+        hr {
+          width: 150px; /* Reduce the width of the line */
+          top: 40%;
+          height: 3px;
+        }
+        .cont{
+          button{
+            margin-left: -5vw;
+            font-size: 15px;
+
+          }
+          
+        }
+        .appointmentBtn{
+          position: absolute; 
+          top: 50%;
+          width: 200px;
+          height: 50px;
+          background-color: #ffffff;
+        }
+        .cont{
+          display:flex;
+          justify-content: center !important;
+          align-items: center;
+          margin-right: -8%;
+      }
+      }
+    }
+  }
+  @media (max-width: 392px) {
+
+    .background {
+      img{
+        height: 400px;
+      }
+      .offer {
+        h1 {
+          font-size: 20px; /* Adjust size for mobile */
+          top: 15%;
+        }
+  
+        p {
+          font-size: 15px; /* Reduce text size */
+          top: 22%;
+          letter-spacing: 2px;
+        }
+  
+        hr {
+          width: 100px; /* Reduce the width of the line */
+          top: 42%;
+          height: 3px;
+        }
+        .cont{
+          button{
+            margin-left: 0vw;
+            font-size: 10px;
+
+          }
+          
+        }
+        .appointmentBtn{
+          position: absolute; 
+          top: 50%;
+          width: 200px;
+          height: 30px;
+          background-color: #ffffff;
+        }
+        .cont{
+          display:flex;
+          justify-content: center !important;
+          align-items: center;
+          margin-right: -8%;
+      }
+      }
+    }
+  }
+ 

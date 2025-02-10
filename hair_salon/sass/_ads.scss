@@ -1,0 +1,139 @@
+.model{
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-top:20% ;
+    }
+}
+.model2{
+    img{
+        margin-left: 45%;
+        margin-top: 20%;
+        width: 10%;
+        height: 10%;
+    }
+    h3{
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 25px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Roboto";
+        text-align: center;
+    }
+    h5{
+        font-size: 14px;
+        letter-spacing: 12px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "Roboto";
+        text-align: center;
+    }
+    p{
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Roboto";
+        text-align: center;
+    }
+    button{
+        margin-top: 5%;
+        margin-left: 22%;
+        color: black;
+        width: 316px;
+        height: 50px;
+        background-color: #ffffff;
+        margin-bottom: 20%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .body{
+        margin-top: 10%;
+    }
+    .model2{
+        button{
+            margin-left: 18%;
+        }
+        
+    }
+
+}
+@media (max-width: 992px) {
+    .body{
+        margin-top: 10%;
+    }
+    .model2{
+        button{
+            margin-left: 30%;
+        }
+        
+    }
+
+}
+@media (max-width: 768px) {
+    .body{
+        margin-top: 10%;
+    }
+    .model2{
+        button{
+            margin-left: 20%;
+        }
+        
+    }
+
+}
+@media (max-width: 531px) {
+    .body{
+        margin-top: 20%;
+    }
+    .model2{
+        button{
+            margin-left: 15%;
+        }
+        
+    }
+
+}
+@media (max-width: 455px) {
+    .body{
+        margin-top: 10%;
+    }
+    .model2{
+        button{
+            margin-left: 15%;
+        }
+        
+    }
+}
+@media (max-width: 447px) {
+    .body{
+        margin-top: 10%;
+    }
+    .model2{
+        button{
+            margin-left: 8%;
+        }
+        
+    }
+}
+@media (max-width: 400px) {
+    .body{
+        margin-top: 10%;
+    }
+    .model2{
+        button{
+            font-size: 10px;
+            width: 50%;
+            height: 5%;
+            margin-left: 25%;
+        }
+        
+    }
+}
