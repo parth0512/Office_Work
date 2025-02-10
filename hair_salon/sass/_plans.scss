@@ -63,7 +63,7 @@
     }
 
     .heading3 .btn {
-        width: 50%; /* Increase button width for better mobile experience */
+        width: 50%; 
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -75,7 +75,7 @@
     }
 
     .heading3 hr {
-        width: 100px; /* Adjust hr width for smaller screens */
+        width: 100px; 
         height: 2px;
     }
 
@@ -85,17 +85,17 @@
     }
 
     .heading3 .nav li {
-        margin-right: 10px; /* Reduce spacing between nav items */
+        margin-right: 10px; 
     }
 
     .heading3 .menu2 list {
-        justify-content: center; /* Align menu items properly */
+        justify-content: center; 
     }
 }
 
 @media screen and (max-width: 480px) {
     .heading3 .btn {
-        width: 70%; /* Make button take up more space */
+        width: 70%; 
     }
 
     .heading3 h4 {
