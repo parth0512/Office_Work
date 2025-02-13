@@ -133,6 +133,7 @@
       }
   }
 }
+
 @media (max-width: 720px) {
   .display{
     margin-top: 51% !important;
@@ -153,17 +154,27 @@
 @media (max-width: 500px) {
   .display{
     margin-top: 55%;
+
       .row{
+          margin-left: 15px;
+          margin-right: 15px;
           display: grid;
           margin-top: 5%;
-          align-items: center !important;
-
+          align-items: left !important;
           .card{
             margin-left: 5%;
             display: grid;
             align-items: center !important;
             margin-bottom: 15px;
           }
+      }
+      .row{
+        width: 97%;
+        .text-section2{
+          margin-left: -15px !important;
+          margin-right: -15px !important;
+          padding: 0;
+        }
       }
   }
 }
