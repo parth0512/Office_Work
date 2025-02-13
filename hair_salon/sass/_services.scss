@@ -1,0 +1,116 @@
+.heading{
+
+    h4{ 
+        margin-top: 40px !important;
+        font-size: 32px;
+        line-height: 25px;
+        color: #000000;
+        font-weight: 900;
+        font-family: "Roboto";
+        text-align: center;
+        margin-bottom: 3% !important;
+        &::after{
+            content: "";
+            display: block; 
+            margin: 5px auto 0;
+            width: 120px;
+            height: 3px;
+            background-color: rgb(0, 0, 0); 
+            margin-top: 25px; 
+        }
+       
+    }
+      p{
+        color: black;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+
+
+      }
+
+      p:last-child{
+        margin-top: 5%;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-weight: 700;
+        font-family: "Roboto";
+        text-align: center;
+        color: #999999 !important;
+        transition: all 0.3s ease-in-out;
+      
+        &:hover,
+        &:focus,
+        &:active {
+          color:  #000000 !important;
+        }
+      }
+}
+
+.thing{
+    margin-top: 4%;
+    img{
+        margin-left: 45% !important;
+        width: 15%;
+        margin-bottom: 10%;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Roboto";
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    p{
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        color: #000000;
+        font-weight: 500;
+        font-family: "Roboto";
+        text-align: center;
+        margin-bottom: 5%;
+    }
+}
+@media (max-width: 1200px) {
+   .heading{
+    h4{ 
+        margin-top: -10% !important;
+        font-size: 32px;
+        line-height: 25px;
+        color: #000000;
+        font-weight: 900;
+        font-family: "Roboto";
+        text-align: center;
+        margin-bottom: 3% !important;
+       
+    }
+}}
+@media (max-width: 595px){
+    .heading{
+        h4{
+            margin-top: -50px !important;
+        }
+    }
+}
+@media (max-width: 454px) {
+   .heading{
+    h4{ 
+        margin-top: 6px !important;
+        font-size: 32px;
+        line-height: 25px;
+        color: #000000;
+        font-weight: 900;
+        font-family: "Roboto";
+        text-align: center;
+        margin-bottom: 4cqh !important;
+    }
+    p{
+        margin-top: 3%;
+    }
+}}

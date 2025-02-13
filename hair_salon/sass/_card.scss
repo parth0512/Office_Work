@@ -1,0 +1,169 @@
+
+.card {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-family: "Roboto";
+  width: 90%;
+  position: relative;
+  top: 30px;
+  transform: translateY(-40%);
+  background: rgba(7, 7, 7, 0.932);
+  overflow: hidden; 
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:   rgba(216, 213, 213, 0.63); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+  .overlay-text {
+    color: rgb(16, 15, 15);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+    img {
+      opacity: 0.3;
+    }
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+}
+.card-container {
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto";
+  color: white;
+  background: rgba(7, 7, 7, 0.886);
+  width: 100%;
+  margin-top: -10px; 
+  cursor: pointer;
+}
+.technique{
+  font-size: 20px;
+  word-spacing: 3px;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+.text-section { 
+  margin-top: -50px !important; 
+}
+@media (max-width: 1200px) {
+  .card{
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-family: "Roboto";
+  width: 90%;
+  position: relative;
+  top: 30px;
+  transform: translateY(-80%);
+  background: rgba(7, 7, 7, 0.932);
+  overflow: hidden; 
+  cursor: pointer;
+  }
+  .text-section{
+    h4{
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto";
+    }
+    .row{
+      p{
+        font-size: 14px;
+        line-height: 25px;
+        color: #000000;
+        font-weight: 500;
+        font-family: "Roboto";
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .display{
+    margin-top: 50% !important;
+      .row{
+          display: grid;
+          margin-top: 5%;
+          align-items: center !important;
+
+          .card{
+            margin-left: 5%;
+            display: grid;
+            align-items: center !important;
+            margin-bottom: 15px;
+          }
+      }
+      .text-section{
+        margin-top: -40% !important;
+      }
+  }
+}
+@media (max-width: 720px) {
+  .display{
+    margin-top: 51% !important;
+      .row{
+          display: grid;
+          margin-top: 5%;
+          align-items: center !important;
+
+          .card{
+            margin-left: 5%;
+            display: grid;
+            align-items: center !important;
+            margin-bottom: 15px;
+          }
+      }
+  }
+}
+@media (max-width: 500px) {
+  .display{
+    margin-top: 55%;
+      .row{
+          display: grid;
+          margin-top: 5%;
+          align-items: center !important;
+
+          .card{
+            margin-left: 5%;
+            display: grid;
+            align-items: center !important;
+            margin-bottom: 15px;
+          }
+      }
+  }
+}

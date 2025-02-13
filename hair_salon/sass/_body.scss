@@ -1,0 +1,296 @@
+.background {
+  position: relative;
+  padding: 0;
+  transition: margin-top 0.3s ease-in-out;
+  .responsive {
+    width: 100%;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .slick-prev,
+      .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+        z-index: 10;
+        width: 54px !important; 
+        height: 54px !important; 
+        background-color:rgba(253, 253, 251, 0.502) !important; 
+        border: none;
+        cursor: pointer;
+      }
+
+  .slick-prev {
+    
+    left: 10%;
+  }
+  
+  .slick-next {
+    right: 10%;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    content: none !important;
+    color:rgba(249, 248, 248, 0.507);
+    font-size: 40px;
+  }
+  .slick-prev::after,
+      .slick-next::after {
+        font-size: 54px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .slick-prev::after {
+        margin-top: -8px;
+        font-size: 54px;
+        content: "<"; 
+      }
+
+      .slick-next::after {
+        margin-top: -8px;
+        font-size: 54px;
+        content: ">"; 
+      }
+  img {
+    background: url(/img/background.jpg) center top;
+    opacity: 0.5;
+    width: 1366px;;
+    height: 800px;
+    background-color: #000000;
+    background-size: cover;
+  }
+  
+  .slick-slide, .slick-cloned {
+    .offer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 80%;
+      
+      h1 {
+        font-size: 60px;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: "Roboto";
+        font-size: clamp(12px, 3vw, 30px);
+        color: white;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        position: relative;
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 5px;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: "Roboto";
+        &::after{
+          content: "";
+          display: block; 
+          margin: 4px auto 0;
+          width: 220px;
+          height: 3px;
+          background-color: rgb(255, 255, 255); 
+          margin-top: 25px; 
+      }
+      }
+      
+     
+      
+      .cont {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .appointmentBtn {
+        width: 300px;
+        height: 50px;
+        
+        font-weight: 600;
+        font-size: 20px;
+        border: none;
+        
+        cursor: pointer;
+        background-color: rgb(249, 247, 247);
+            color: rgb(11, 11, 11);
+            transition: all 0.3s ease-in-out;
+          
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: rgb(15, 15, 15) !important;
+              color: rgb(254, 251, 251) !important;
+              border: 1px solid black;
+            }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+    .slick-prev,
+    .slick-next {
+      width: 45px !important; 
+      height: 45px !important;
+    }
+    .slick-prev {
+      left: 5%;
+    }
+    .slick-next {
+      right: 5%;
+    }
+    .slick-prev::after,
+    .slick-next::after {
+      font-size: 45px;
+    }
+  
+      .offer {
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 20px;
+        }
+
+        .appointmentBtn {
+          width: 250px;
+          height: 45px;
+          font-size: 18px;
+        }
+      }
+    }
+  
+  
+    @media (max-width: 768px) {
+      .slick-slider {
+        .slick-prev,
+        .slick-next {
+          margin-top: -2%;
+          width: 30px !important;
+          height: 30px !important;
+        }
+        .slick-prev {
+          left: 10% !important;
+        }
+        .slick-next {
+          right: 10% !important;
+        }
+        .slick-prev::after,
+        .slick-next::after {
+          font-size: 24px !important;
+        }
+      }
+    
+      .background .offer {
+        h1 {
+          font-size: clamp(25px, 3vw, 18px) !important;
+        }
+        p {
+          font-size: clamp(10px, 2vw, 12px) !important;
+        }
+        .appointmentBtn {
+          width: clamp(100px, 35vw, 180px) !important;
+          height: clamp(30px, 5vh, 50px) !important; 
+          font-size: clamp(10px, 2vw, 14px) !important; 
+          padding: 5px !important;
+          white-space: nowrap !important;
+      }
+    }
+  }
+    
+    @media (max-width: 480px) {
+      .slick-slider {
+        .slick-prev,
+        .slick-next {
+          margin-top: -5%;
+          width: 0!important;
+          height:0 !important;
+        }
+        .slick-prev::after,
+        .slick-next::after {
+          font-size: 0px !important;
+        }
+      }
+    
+      .background .offer {
+        h1 {
+          font-size: clamp(14px, 2.5vw, 14px) !important;
+        }
+        p {
+          font-size: clamp(10px, 1.5vw, 10px) !important;
+          &::after{
+            content: "";
+            display: block; 
+            margin: 5px auto 0;
+            width: 120px !important;
+            height: 3px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 25px; 
+        }
+        }
+        
+        .appointmentBtn {
+          width: clamp(80px, 25vw, 120px) !important;
+          height: clamp(18px, 3.5vh, 25px) !important;
+          font-size: clamp(8px, 1.2vw, 10px) !important;
+        }
+      }
+    }
+    
+  @media (max-width: 360px) {
+    .slick-slider {
+      .slick-prev,
+      .slick-next {
+        margin-top: -5%;
+        width: 0!important;
+        height:0 !important;
+      }
+      .slick-prev::after,
+      .slick-next::after {
+        font-size: 0px !important;
+      }
+    }
+  
+    .background {
+
+      .offer {
+        h1 {
+          margin-top: 5%;
+          font-size: 9px;
+        
+        }
+        p {
+          font-size: 7px !important;
+          letter-spacing: 0;
+          &::after{
+            content: "";
+            display: block; 
+            margin: 5px auto 0;
+            width: 70px !important;
+            height: 2px;
+            background-color: rgb(255, 255, 255); 
+            margin-top: 25px; 
+        }
+        }
+        .appointmentBtn {
+          margin-top: -7%;
+          width: 100px !important;
+          height: 30px;
+          font-size: 8px !important;
+        }
+      }
+    }
+  }
+  
