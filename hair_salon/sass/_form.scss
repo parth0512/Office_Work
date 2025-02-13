@@ -181,20 +181,24 @@
         font-size: 20px;
       }
     }
+    .box{
+      margin: 0px 15px;
+    }
     .appointment-box {
-      margin-top: -60px;
+      margin-top: -90px;
       height: 280px;
       padding: 15px 5px 5px;
-      
-      
+      margin-left: -10px;
+ 
       .form {
         input {
           margin-left: 5px;
+          margin-right: 5px !important;
           width: 98%;
         }
         button {
           margin: -10px;
-          margin-left: 15px;
+          margin-left: 10px;
           width: 90%;
         }
       }
