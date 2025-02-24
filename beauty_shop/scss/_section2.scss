@@ -1,0 +1,94 @@
+.navbar {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    background-color: #34073f !important;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    .navbar-nav {
+      .nav-link {
+        width: 100%;
+        color: #fff !important;
+        transition: background-color 0.3 ease;
+        &:hover {
+         background-color:#7e3691;
+        }
+      }
+  
+      .dropdown-menu {
+        background-color: #34073f !important; // Dropdown background color
+        border: none;
+        .dropdown-item {
+            text-align: center;
+            padding-bottom: 15px;
+            color: #fff !important; 
+            transition: background-color 0.3 ease;
+          &:hover {
+            background-color: #7e3691 !important; // Slightly lighter purple on hover
+            color: #fff !important;
+          }
+        }
+      }
+      .nav-item{
+        margin-left: 5%;
+        margin-right: 14%;
+      }
+    }
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.5) !important;
+      .navbar-toggler-icon {
+        filter: invert(1); // Make the icon white
+      }
+      &:focus,
+      &:active {
+        outline: none !important;
+        box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.279) !important;
+      }
+
+    }
+  }
+  
+@media (max-width:1200px){
+    .navbar-nav{
+        .nav-item{
+            margin-right: 6% !important;
+          }
+    }
+}
+@media(max-width:992px){
+    .navbar-nav{
+        .nav-item{
+            font-size: 12px;
+            margin-right: 1% !important;
+          }
+    }
+}
+@media (max-width:768px){
+    .navbar{
+        .navbar-toggler {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            margin: 0 auto !important;
+        }
+        .navbar-nav{
+            margin-left: 0% !important;
+            .nav-link {
+                margin-top: 5%;
+                text-align: center;
+                
+            }
+            .nav-item{
+                margin-right: 0% !important;
+                margin-left: 0% !important;
+            }
+        }
+        .dropdown-menu{
+         .dropdown-item {
+            margin-top: 0% !important;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    }
+}

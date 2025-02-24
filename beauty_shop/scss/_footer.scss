@@ -1,0 +1,35 @@
+.footer {
+    width: 100%; // Change to 100% for responsiveness
+     // Set a max width for larger screens
+    height: 70px;
+    background-color: #34073f;
+    display: flex; // Use flexbox for alignment
+    justify-content: center; // Center content horizontally
+    align-items: center; // Center content vertically
+}
+
+.info {
+    padding-top: 20px;
+    margin: 0 20%; // Margin for larger screens
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center; // Center text
+
+    // Media Queries for Responsiveness
+    @media (max-width: 992px) {
+        margin: 0 10%; // Reduce margin for smaller screens
+        font-size: 18px; // Slightly reduce font size
+    }
+
+    @media (max-width: 768px) {
+        margin: 0 5%; // Further reduce margin for mobile
+        font-size: 16px; // Further reduce font size
+    }
+
+    @media (max-width: 480px) {
+        font-size: 14px; // Further reduce font size for very small screens
+    }
+}
