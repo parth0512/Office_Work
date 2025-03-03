@@ -1,0 +1,399 @@
+@import 'variables';
+@import 'mixins';
+
+.container-fluid.services-section {
+    background-color: $primary-color;
+    padding-bottom: 2%;
+
+    .services-container {
+        h1.services-title {
+            padding-top: 5%;
+            @include text-style(30px, 400, $white, $font-family-josefin);
+            text-align: center;
+        }
+
+        .para.services-description {
+            p.services-text {
+                padding-top: 4%;
+                width: 845px;
+                height: 47px;
+                @include text-style(14px, 400, $white, $font-family-josefin);
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+
+    .responsive.services-slider {
+        margin-top: 10%;
+
+        .service-item {
+            img.service-image {
+                width: 100%;
+            }
+
+            p.service-name {
+                color: $white;
+                text-align: center !important;
+            }
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 47%;
+            top: 100%;
+            display: flex;
+            gap: 8px;
+
+            li {
+                button {
+                    width: 15px;
+                    height: 15px;
+                    background-color: $hover-color !important;
+                    border-radius: 0;
+                    border: none;
+                    transition: all 0.3s ease;
+                    font-size: 0;
+                    background: none;
+                }
+
+                &.slick-active button {
+                    background-color: $white !important;
+                }
+            }
+        }
+
+        .slick-dots li button::before {
+            display: none !important;
+            content: none !important;
+        }
+
+        .slick-track {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+@media (max-width:1400px){
+    .container-fluid.services-section {
+        background-color: #34073f;
+        padding-bottom: 2%;
+    
+        .services-container {
+            h1.services-title {
+                padding-top: 5%;
+                font-size: 30px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Josefin Sans";
+                text-align: center;
+            }
+    
+            .para.services-description {
+                p.services-text {
+                    padding-top: 4%;
+                    width: 845px;
+                    height: 47px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-family: "Josefin Sans";
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+    
+        .responsive.services-slider {
+            margin-top: 10%;
+    
+            .service-item {
+                img.service-image {
+                    width: 100%;
+                }
+    
+                p.service-name {
+                    color: white;
+                    text-align: center !important;
+                }
+            }
+    
+            .slick-dots {
+                position: absolute;
+                bottom: 10px;
+                left: 47%;
+                top: 100%;
+                display: flex;
+                gap: 8px;
+    
+                li {
+                    button {
+                        width: 15px;
+                        height: 15px;
+                        background-color: #7e3691 !important;
+                        border-radius: 0;
+                        border: none;
+                        transition: all 0.3s ease;
+                        font-size: 0;
+                        background: none;
+                    }
+    
+                    &.slick-active button {
+                        background-color: #ffffff !important;
+                    }
+                }
+            }
+    
+            .slick-dots li button::before {
+                display: none !important;
+                content: none !important;
+            }
+    
+            .slick-track {
+                display: flex;
+                gap: 20px !important ;
+            }
+        }
+    }
+    }
+    
+    @media (max-width: 1200px) {
+        .container-fluid.services-section {
+            background-color: #34073f;
+            padding-bottom: 5%;
+    
+            .services-container {
+                h1.services-title {
+                    margin: 0 auto !important;
+                }
+    
+                .para.services-description {
+                    p.services-text {
+                        margin: 0 auto !important;
+                    }
+                }
+            }
+    
+            .responsive.services-slider {
+                img.service-image {
+                    width: 90% !important;
+                    margin-left: 0px !important;
+                }
+    
+                p.service-name {
+                    font-size: 15px !important;
+                    margin-left: 0% !important;
+                }
+    
+                .slick-dots {
+                    position: absolute !important;
+                    bottom: 20px !important;
+                    left: 15% !important;
+                    top: 110% !important;
+                    display: flex !important;
+                    gap: 8px !important;
+    
+                    li {
+                        button {
+                            width: 15px;
+                            height: 15px;
+                            background-color: #7e3691 !important;
+                            border-radius: 0;
+                            border: none;
+                            transition: all 0.3s ease;
+                            font-size: 0;
+                            background: none;
+                        }
+    
+                        &.slick-active button {
+                            background-color: #ffffff !important;
+                        }
+                    }
+                }
+    
+                .slick-dots li button::before {
+                    display: none !important;
+                    content: none !important;
+                }
+    
+                .slick-track {
+                    display: flex !important;
+                    gap: 10px !important;
+                }
+            }
+        }
+    }
+    @media (max-width: 1018px) {
+        .container-fluid.services-section {
+            .services-container {
+                h1.services-title {
+                    font-size: 30px !important;
+                    margin: 0 auto !important;
+                }
+    
+                .para.services-description {
+                    p.services-text {
+                        width: 100% !important;
+                        font-size: 17px !important;
+                        margin: 0 auto !important;
+                    }
+                }
+            }
+            .responsive.services-slider {
+                margin-top: 15%;
+                img.service-image {
+                    margin-left: 30px !important ;
+                    width: 90% !important;
+                }
+    
+                p.service-name {
+                    margin-left: 20% !important;
+                    font-size: 18px !important;
+                }
+    
+                .slick-dots {
+                    margin-left: 30% !important;
+                    li button {
+                        width: 20px !important;
+                        height: 20px !important;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
+    @media (max-width: 992px) {
+        .container-fluid.services-section {
+            margin-bottom: 5% !important;
+            
+            .responsive.services-slider {
+                margin-left: -30px !important;
+                
+                img.service-image {
+                    width: 87% !important;
+                }
+    
+                p.service-name {
+                    margin-left: 12% !important;
+                    font-size: 12px !important;
+                }
+            }
+            .services-container {
+                .para.services-description {
+                    p.services-text {
+                        width: 100% !important;
+                        font-size: 15px !important;
+                        margin: 0 auto !important;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 769px) {
+        .container-fluid.services-section {
+            .responsive.services-slider {
+                margin-left: 0px !important;
+                img.service-image {
+                    margin-left: 0px !important;
+                    width: 100% !important;
+                }
+    
+                p.service-name {
+                    font-size: 9px !important;
+                    margin-left: 0px !important;
+                }
+                .slick-dots {
+                    margin-left: 25% !important;
+                    li button {
+                        width: 10px !important;
+                        height: 10px !important;
+                    }
+                }
+            }
+            .services-container {
+                .para.services-description {
+                    p.services-text {
+                        width: 100% !important;
+                        font-size: 10px !important;
+                        margin: 0 auto !important;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .container-fluid.services-section {
+            .responsive.services-slider {
+                img.service-image {
+                    margin-left: 10px !important;
+                    width: 80% !important;   
+                    margin-top: 15px !important;
+                }
+                p.service-name {
+                    margin-top: 10px !important;
+                    font-size: 9px !important;
+                    margin-left: -0px !important;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .container-fluid.services-section {
+            margin-bottom: 0% !important;
+    
+            .responsive.services-slider {
+                margin-left: 0% !important;
+    
+                img.service-image {
+    
+                    margin-left: 25% !important;
+                    width: 50% !important;
+                    height: 150px !important;
+                    margin-top: 0% !important;
+                }
+                
+            }
+            .services-container{
+    
+                h1.services-title{
+                        font-size: 20px !important;
+                        margin-bottom: 20px !important;
+                    }
+                p.service-name {
+                    width: 100% !important;
+                    margin-top: 10px !important;
+                    font-size: 12px !important;
+                    margin-left: 28px !important;
+                }
+            }
+        }
+    }
+    @media (max-width: 444px){
+        .container-fluid.services-section {
+            margin-bottom: 0% !important;
+            .responsive.services-slider {
+                img.service-image {
+                    margin-top: 30% !important;
+                }
+            }
+        }
+    }
+    @media (max-width: 320px) {
+        .container-fluid.services-section {
+            margin-bottom: 0% !important;
+            .services-container {
+                .responsive.services-slider {
+                img.service-image{
+                    margin-top: 40% !important;
+                }
+            }
+            }
+        }
+    }
+    
