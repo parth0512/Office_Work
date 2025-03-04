@@ -1,0 +1,350 @@
+.contact {
+    padding-top: $spacing-large !important;
+    padding-bottom: $spacing-large !important;
+
+    .contact_us {
+        @include text-style(30px, 400, $white, $font-family-josefin);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .form {
+        button {
+            @include button-style(250px, 50px, $white, $hover-color, $secondary-color);
+            font-size: 18px;
+            font-weight: 700;
+            font-family: $font-family-josefin;
+            margin-top: 10%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: 50px auto;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+
+            input,
+            textarea {
+                width: 100%;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $white;
+                padding: 10px 0;
+                color: $white;
+                font-size: 16px;
+                outline: none;
+            }
+
+            label {
+                position: absolute;
+                top: 10px;
+                left: 0;
+                color: #a8a8a8;
+                font-size: 14px;
+                pointer-events: none;
+                transition: 0.3s ease;
+            }
+
+            input:focus ~ label,
+            input:not(:placeholder-shown) ~ label,
+            textarea:focus ~ label,
+            textarea:not(:placeholder-shown) ~ label {
+                top: -10px;
+                font-size: 12px;
+                color: $white;
+            }
+
+            textarea {
+                height: 40px;
+                resize: none;
+            }
+        }
+    }
+
+    .address,
+    .mail {
+        p {
+            @include text-style(18px, 400, $white, $font-family-philosopher);
+            letter-spacing: 1px;
+            line-height: 20px;
+        }
+    }
+
+    .address p {
+        margin-top: 7%;
+        margin-bottom: 12%;
+    }
+}
+
+  @media(max-width:1400px){
+  .contact{
+    padding-top: 30px !important;
+    padding-bottom:30px !important;
+    .contact_us{
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Josefin Sans";
+        
+        text-align: center;
+      
+      }
+        .form{
+  
+            button{
+                width: 250px;
+                height: 50px;
+                background-color: #ffffff;
+                font-size: 18px;
+                color: #9d54a0;
+                font-weight: 700;
+                font-family: "Josefin Sans";
+                margin-top: 10%;
+                display: block; 
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                border: none;
+                &:hover, &:focus{
+                  color: #ffffff;
+                  background-color: #7e3691;
+                }
+            }
+          
+        .form-container {
+            width: 400px;
+            margin: 50px auto;
+          }
+          
+          .input-group {
+            position: relative;
+            margin-bottom: 20px;
+          
+            input,
+            textarea {
+              width: 100%;
+              background: transparent;
+              border: none;
+              border-bottom: 1px solid #ffffff;
+              padding: 10px 0;
+              color: #ffffff;
+              font-size: 16px;
+              outline: none;
+            }
+            
+            label {
+              position: absolute;
+              top: 10px;
+              left: 0;
+              color: #a8a8a8;
+              font-size: 14px;
+              pointer-events: none;
+              transition: 0.3s ease;
+            }
+          
+            input:focus ~ label,
+            input:not(:placeholder-shown) ~ label,
+            textarea:focus ~ label,
+            textarea:not(:placeholder-shown) ~ label {
+              top: -10px;
+              font-size: 12px;
+              color: #ffffff;
+            }
+          
+            textarea {
+              height: 40px;
+              resize: none;
+            }
+          }
+        }
+  
+        .address{
+           p{
+            margin-top: 7%;
+            font-size: 18px;
+            margin-bottom: 12%;
+            letter-spacing: 1px;
+            line-height: 20px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Philosopher";
+           }
+  
+        }
+        .mail{
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 20px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Philosopher";
+            }
+        }
+      }  
+    }
+  @media (max-width:1200px){
+    .contact{
+      h1{
+        margin: 0 auto !important;
+      }
+      overflow-x: hidden !important;
+      width: 100% !important;
+      .address{
+        p{
+          margin-left: 0% !important;
+          margin-bottom: 10% !important;
+        }
+      }
+     .mail{
+         p{
+          margin-left: 0% !important;
+            height: 30px !important;
+             font-size: 18px;
+             letter-spacing: 1px;
+             line-height: 0px !important;
+             color: #ffffff;
+             font-weight: 400;
+             font-family: "Philosopher";
+         }
+     }
+    }
+  
+  }
+  @media (max-width:1018px){
+    .contact{
+      h1{
+        margin: 0 auto !important;
+        font-size: 30px !important;
+      }
+      overflow-x: hidden !important;
+      width: 100% !important;
+      .address{
+        p{
+          width: 100% !important;
+          margin-left: 0% !important;
+          margin-bottom: 15% !important;
+        }
+      }
+     .mail{
+         p{
+            margin-left: 0% !important;
+             font-size: 18px;
+             letter-spacing: 1px;
+             line-height: 0px !important;
+             color: #ffffff;
+             font-weight: 400;
+             font-family: "Philosopher";
+         }
+     }
+    }
+  
+  }
+  @media(max-width:992px){
+    .contact{
+      padding-bottom: 0% !important;
+      width: 100% !important;
+      overflow-x: visible !important;
+  .form{
+    button{
+      display: block !important;
+      margin: 0 auto !important;
+    }
+  }
+  .address{
+  p{
+   margin-top: 7%;
+   font-size: 18px !important;
+   margin-bottom: 5% !important;
+   letter-spacing: 1px;
+   line-height: 20px;
+   color: #ffffff;
+   font-weight: 400;
+   font-family: "Philosopher";
+   margin-left: 0 !important;
+   width: 100% !important;
+   text-align: center !important;
+  }
+  }
+  
+  .mail{
+    p{
+      height: 0 !important;
+      margin-bottom:10% !important;
+      text-align: center !important;
+      margin-left: 10% !important;
+     
+    }
+  }
+  }
+  }
+  @media(max-width:769px){
+    .contact{
+      width: 100% !important;
+      overflow-x: visible !important;
+  .form{
+    button{
+      display: block !important;
+      margin: 0 auto !important;
+    }
+  }
+  .address{
+  p{
+   margin-top: 10% !important;
+   font-size: 18px !important;
+   margin-bottom: 12%;
+   letter-spacing: 1px;
+   line-height: 20px;
+   color: #ffffff;
+   font-weight: 400;
+   font-family: "Philosopher";
+   margin-left: 0 !important;
+   width: 100% !important;
+   text-align: center !important;
+  }
+  }
+  
+  .mail{
+    p{
+      margin-bottom:10% !important;
+      text-align: center !important;
+      margin-left: 3% !important;
+     
+    }
+   
+  }
+  }
+  }
+  
+  @media(max-width:445px){
+    .contact{
+  .form{
+    button{
+      width: 120px !important;
+      display: block !important;
+      margin: 0 auto !important;
+    }
+  }
+  .address{
+    p{
+      font-size: 13px !important;
+    }
+   
+  }
+  .mail{
+  margin-bottom: 0% !important;
+  p{
+    font-size: 10px !important;
+    height: 0px !important;
+  }
+  }}
+  }
+  

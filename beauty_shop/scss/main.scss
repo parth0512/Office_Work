@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'mixins';
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'section5';
+@import 'section6';
+@import 'section7';
+@import 'section8';
+@import 'card';
+@import 'footer';
+
+html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+}
