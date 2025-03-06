@@ -469,15 +469,25 @@ nav .logo img {
     margin-top: 55%;
   }
   .display .row {
+    margin-left: 15px;
+    margin-right: 15px;
     display: grid;
     margin-top: 5%;
-    align-items: center !important;
+    align-items: left !important;
   }
   .display .row .card {
     margin-left: 5%;
     display: grid;
     align-items: center !important;
     margin-bottom: 15px;
+  }
+  .display .row {
+    width: 97%;
+  }
+  .display .row .text-section2 {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    padding: 0;
   }
 }
 .appointment-box {
@@ -629,18 +639,23 @@ button {
   .text-section h3 {
     font-size: 20px;
   }
+  .box {
+    margin: 0px 15px;
+  }
   .appointment-box {
-    margin-top: -60px;
+    margin-top: -90px;
     height: 280px;
     padding: 15px 5px 5px;
+    margin-left: -10px;
   }
   .appointment-box .form input {
     margin-left: 5px;
+    margin-right: 5px !important;
     width: 98%;
   }
   .appointment-box .form button {
     margin: -10px;
-    margin-left: 15px;
+    margin-left: 10px;
     width: 90%;
   }
   .moustache-wrapper {
@@ -949,6 +964,9 @@ button {
   }
 }
 @media (max-width: 454px) {
+  .heading .row {
+    margin: 0px 15px;
+  }
   .heading h4 {
     margin-top: 6px !important;
     font-size: 32px;
