@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>CRUD Application</h1>
+      <p>Perform it below.</p>
+    </div>
+    <div>
+      <form onsubmit="onSubmit(event);">
+        <label>Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter Full Name" />
+        <br />
+        <label>Your Role</label>
+        <input type="text" id="role" placeholder="Enter Your Role" />
+        <br />
+        <label>City</label>
+        <input type="text" id="city" placeholder="Enter Your city" />
+        <br />
+        <label>Salary</label>
+        <input type="number" id="salary" placeholder="Enter Salary" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <table class="list" id="employeeList">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Role</th>
+            <th>City</th>
+            <th>Salary</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
