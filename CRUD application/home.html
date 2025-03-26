@@ -19,40 +19,41 @@
         <hr />
       </div>
       <form onsubmit="onSubmit(event);">
+        <label for="fullname">Full Name:</label>
         <input
-          required
           type="text"
-          pattern="[A-Za-z\s]+"
-          minlength="1"
-          maxlength="20"
           id="fullname"
+          minlength="3"
+          maxlength="20"
           placeholder="Full Name"
         />
+        <span class="error-message" id="fullNameError"></span>
         <br />
-        <input required type="email" id="email" placeholder="Email" />
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Email" />
+        <span class="error-message" id="emailError"></span>
         <br />
+        <br />
+        <label for="designation">Designation:</label>
+        <select id="designation" required></select>
+        <span class="error-message" id="designationError"></span>
+        <br />
+        <br />
+        <label>Contact Number:</label>
         <input
-          required
-          type="text"
-          id="designation"
-          pattern="[A-Za-z\s]+"
-          minlength="1"
-          maxlength="20"
-          placeholder="Designation"
-        />
-        <br />
-        <input
-          required
           type="tel"
-          maxlength="10"
           id="phone"
+          minlength="10"
+          maxlength="10"
           placeholder="Contact number"
         />
+        <span class="error-message" id="phoneError"></span>
         <br />
         <hr />
         <label>Gender:</label><br />
-        <input required type="radio" name="gender" value="male" /> Male
-        <input required type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <span class="error-message" id="genderError"></span>
         <br />
         <hr />
         <label>Hobbies:</label><br />
@@ -60,10 +61,13 @@
         <input type="checkbox" name="hobbies" value="Singing" />Singing<br />
         <input type="checkbox" name="hobbies" value="Playing" />Playing<br />
         <input type="checkbox" name="hobbies" value="Dancing" />Dancing<br />
-
+        <span class="error-message" id="hobbiesError"></span>
+        <br />
         <hr />
-        <p>Address:</p>
-        <textarea required id="address" placeholder="Address"></textarea>
+        <label>Address:</label>
+        <textarea id="address" placeholder="Address"></textarea>
+        <span class="error-message" id="addressError"></span>
+        <br />
         <hr />
         <button type="submit">Submit</button>
       </form>
