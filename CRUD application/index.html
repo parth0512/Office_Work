@@ -38,16 +38,52 @@
       <span class="error" id="designationError"></span><br /><br />
 
       <label>Gender:</label>
-      <input type="radio" name="gender" value="Male" /> Male
-      <input type="radio" name="gender" value="Female" /> Female
+      <input
+        type="radio"
+        name="gender"
+        value="male"
+        onchange="validateForm(false, 'gender')"
+      />
+      Male
+      <input
+        type="radio"
+        name="gender"
+        value="female"
+        onchange="validateForm(false, 'gender')"
+      />
+      Female
+
       <span class="error" id="genderError"></span><br /><br />
 
       <label>Hobbies:</label>
-      <input type="checkbox" name="hobbies" value="Reading" /> Reading
-      <input type="checkbox" name="hobbies" value="Sports" /> Sports
-      <input type="checkbox" name="hobbies" value="Music" /> Music
-      <input type="checkbox" name="hobbies" value="Travel" /> Travel
-      <span class="error" id="hobbiesError"></span><br /><br />
+      <input
+        type="checkbox"
+        name="hobbies"
+        value="reading"
+        onchange="validateForm(false, 'hobbies')"
+      />
+      Reading
+      <input
+        type="checkbox"
+        name="hobbies"
+        value="sports"
+        onchange="validateForm(false, 'hobbies')"
+      />
+      Sports
+      <input
+        type="checkbox"
+        name="hobbies"
+        value="sports"
+        onchange="validateForm(false, 'hobbies')"
+      />
+      Dancing
+      <input
+        type="checkbox"
+        name="hobbies"
+        value="sports"
+        onchange="validateForm(false, 'hobbies')"
+      />
+      Singing <span class="error" id="hobbiesError"></span><br /><br />
 
       <label>Address:</label>
       <textarea id="address"></textarea>
