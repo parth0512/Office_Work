@@ -1,0 +1,40 @@
+.navbar {
+  overflow-y: hidden;
+}
+.navbar .container-fluid .nav_logo {
+  height: 150px;
+  width: 100%;
+}
+.navbar .collapse .navbar-nav {
+  margin: 0 auto;
+}
+.navbar .collapse .navbar-nav .nav-item {
+  margin: 0 40px;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 30px;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(255, 157, 0);
+}
+.navbar .collapse .nav-icons {
+  margin-right: 40px;
+}
+.navbar .collapse .nav-icons i {
+  font-size: 40px;
+  transition: transform 0.3s ease-in-out;
+  letter-spacing: 40px;
+}
+.navbar .collapse .nav-icons i:hover {
+  transform: scale(1.2);
+}
+
+.responsive img {
+  display: block;
+  width: 100%;
+  transition: transform 1s ease-in;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=main.css.map */
