@@ -84,6 +84,11 @@
   #userEmail {
     max-width: 100px;
   }
+    .productList{
+    text-align: center;
+    margin-top: 18%;
+    margin-bottom: 5%;
+  }
 }
 
 .cart-item {
