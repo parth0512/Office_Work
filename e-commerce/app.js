@@ -201,7 +201,7 @@ function init() {
     authSection.classList.remove("d-none");
     mainContent.classList.add("d-none");
     cartPage.classList.add("d-none");
-    document.getElementById("footer").style.display = "none"; // 🔥 Hide footer on login/signup
+    document.getElementById("footer").style.display = "none"; 
   }
 }
 
